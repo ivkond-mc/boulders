@@ -1,4 +1,4 @@
-![Logo](./docs/logo.png)
+![Logo](https://github.com/ivkond-mc/boulders/blob/1.21.4/docs/logo.png?raw=true)
 
 [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/license/mit)
 [![Java 21](https://img.shields.io/badge/java-21%2B-blue)](https://adoptium.net/temurin/releases/?version=21)
