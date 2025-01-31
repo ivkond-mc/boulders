@@ -35,7 +35,7 @@ public class BoulderFeature extends Feature<BoulderFeatureConfig> {
         var testPos = new BlockPos(origin);
         var targetPos = testPos;
 
-        for (int y = origin.getY(); y > world.getMinY(); y--) {
+        for (int y = origin.getY(); y > world.dimensionType().minY(); y--) {
             var downPos = testPos.below();
             var testState = world.getBlockState(downPos);
             if (testState.isRedstoneConductor(world, downPos) && !solidBlockFound) {
@@ -75,12 +75,12 @@ public class BoulderFeature extends Feature<BoulderFeatureConfig> {
         List<ResourceLocation> ores = config.ores();
 
         if (random.nextInt(1, 100) < config.ratio()) {
-            return BuiltInRegistries.BLOCK.getValue(config.material()).defaultBlockState();
+            return BuiltInRegistries.BLOCK.get(config.material()).defaultBlockState();
         }
 
         ResourceLocation id = selectRandomIdOrMaterial(config, random, ores);
 
-        return BuiltInRegistries.BLOCK.getValue(id).defaultBlockState();
+        return BuiltInRegistries.BLOCK.get(id).defaultBlockState();
     }
 
     private ResourceLocation selectRandomIdOrMaterial(BoulderFeatureConfig config, RandomSource random, List<ResourceLocation> ores) {
@@ -89,15 +89,12 @@ public class BoulderFeature extends Feature<BoulderFeatureConfig> {
         do {
             id = getRandomFromList(ores, random);
             if (BuiltInRegistries.BLOCK.containsKey(id)) {
-                break;
+                return id;
             }
             attempts--;
         } while (attempts > 0);
 
-        if (id == null) {
-            id = config.material();
-        }
-        return id;
+        return config.material();
     }
 
     private ResourceLocation getRandomFromList(List<ResourceLocation> list, RandomSource random) {
