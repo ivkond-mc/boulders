@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "${mod_sources}",
+    "sources": "${mod_sources}"
+  },
+  "license": "${mod_licence}",
+  "icon": "assets/boulders/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ivkond.mc.mods.boulders.fabric.BouldersFabric"
+    ],
+    "client": [
+      "ivkond.mc.mods.boulders.fabric.client.BouldersFabricClient"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=${java_version}",
+    "fabric-api": "*"
+  }
+}

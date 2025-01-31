@@ -1,0 +1,26 @@
+# gradle
+*/.gradle/
+.gradle/
+build/
+*/build
+out/
+classes/
+
+# idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# macos
+*.DS_Store
+
+# fabric/forge
+run/
+*/run/
+
+# java
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr

@@ -1,0 +1,20 @@
+{
+  "type": "boulders:boulder",
+  "config": {
+    "material": "minecraft:deepslate",
+    "ratio": 70,
+    "radius": {
+      "min": 1,
+      "max": 3
+    },
+    "ores": [
+      "minecraft:deepslate_diamond_ore",
+      "minecraft:deepslate_gold_ore",
+      "minecraft:deepslate_emerald_ore",
+      "oritech:deepslate_platinum_ore",
+      "oritech:deepslate_uranium_ore",
+      "mekanism:deepslate_fluorite_ore",
+      "mekanism:deepslate_uranium_ore"
+    ]
+  }
+}

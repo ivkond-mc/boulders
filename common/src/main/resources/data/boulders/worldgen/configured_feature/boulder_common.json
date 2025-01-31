@@ -1,0 +1,18 @@
+{
+  "type": "boulders:boulder",
+  "config": {
+    "material": "minecraft:deepslate",
+    "ratio": 50,
+    "radius": {
+      "min": 2,
+      "max": 4
+    },
+    "ores": [
+      "minecraft:deepslate_iron_ore",
+      "minecraft:deepslate_copper_ore",
+      "minecraft:deepslate_coal_ore",
+      "oritech:deepslate_nickel_ore",
+      "mekanism:deepslate_osmium_ore"
+    ]
+  }
+}
