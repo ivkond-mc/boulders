@@ -80,3 +80,13 @@ subprojects {
         setDisableEmptyJarCheck(false)
     }
 }
+
+tasks.register('uploadMod') {
+    group 'publishing'
+    // Generates something like: [':fabric:publishMod', ':neoforge:publishMod']
+    def tasks = enabled_platforms.split(',').collect {":" + it + ":publishMod" }
+    dependsOn(tasks)
+    doLast {
+        print("Mods has been successfully uploaded")
+    }
+}
