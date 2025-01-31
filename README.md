@@ -3,7 +3,7 @@
 [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/license/mit)
 [![Java 21](https://img.shields.io/badge/java-21%2B-blue)](https://adoptium.net/temurin/releases/?version=21)
 [![Minecraft](https://img.shields.io/badge/minecraft-1.21.4-blue)](https://www.minecraft.net/article/minecraft-java-edition-1-21-4)
-[![Build status](https://img.shields.io/github/actions/workflow/status/ivkond-mc/boulders/gradle-publish.yml?branch=release/1.21.4)](https://github.com/ivkond-mc/boulders/actions/workflows/gradle-publish.yml?branch=release/1.21.4)
+[![Build status](https://img.shields.io/github/actions/workflow/status/ivkond-mc/boulders/gradle-publish.yml?branch=1.21.4)](https://github.com/ivkond-mc/boulders/actions/workflows/gradle-publish.yml?branch=1.21.4)
 
 ---
 
